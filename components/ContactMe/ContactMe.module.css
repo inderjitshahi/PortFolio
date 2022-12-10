@@ -1,0 +1,127 @@
+.main-container{
+    padding: 2.5rem 0;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.central-form{
+    max-width: 1100px;
+    padding: 1rem;
+    display: flex;
+    border: 1rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#8414e0 ;
+}
+
+.central-form h2{
+   color: white;
+   letter-spacing: 0.2rem;
+   margin-bottom:2rem; 
+}
+.back-form{
+    max-width: 380px;
+    margin: 0 auto;
+}
+.back-form .img-back{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.back-form .img-back img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+.img-back h4{
+    color: white;
+    letter-spacing: .3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    opacity: .5;
+}
+.central-form form{
+    width: auto;
+    display: flex;
+    color: #8414e0;
+    padding:1rem ;
+    justify-content: center;
+    flex-direction:column;
+    margin-top:-5rem ;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.form-p{
+    text-align: center;
+    margin-bottom: 1rem;
+    color:#8414e0;
+    letter-spacing: .4rem;
+    font-family: "Poppins Bold";
+}
+.form-label{
+    margin-bottom: .5rem;
+    color: #8414e0;
+    letter-spacing: .4rem;
+}
+
+.form-input, .textarea{
+    width: 100%;
+    border: 2px solid rgba(0,0,0,0);
+    outline: none;
+    background-color: rgba(230, 230,230, 0.6);
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.textarea:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: white;
+}
+.form-input:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: white;
+}
+
+.img-back{
+    flex:1;
+    align-self:center ;
+    margin-right: 2rem;
+}
+.form{
+    flex:0.9;
+}
+
+.col i{
+    padding: .7rem;
+    color: white;
+}
+.col i:hover{
+  transform: scale(1.5);
+}
+.load img{
+    width: 10rem;
+    color: green;
+}
+
+@media screen and (min-width:940px) {
+  .back-form{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }  
+  .img-back{
+    flex:1;
+    align-self: center;
+    margin-right: 2rem;
+  }
+  .form{
+    flex: 0.9;
+  }
+}
