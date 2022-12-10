@@ -7,6 +7,8 @@ import { TypeAnimation } from 'react-type-animation';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import Image from 'next/image';
+import { BsFacebook, BsLinkedin } from 'react-icons/bs'
+import { AiFillInstagram, AiFillGithub } from 'react-icons/ai'
 
 function ContactMe(props) {
 
@@ -67,9 +69,9 @@ function ContactMe(props) {
                 subHeading={"Lets Keep in Touch"}
                 title={"Contact Me"}
             />
-            <div className={Classes['central-form']}>
-                <div className={Classes['col']}>
-                    <h2>
+            <div className='flex flex-col  sm:mx-2 md:mx-10 bg-violet-600 rounded-xl p-5'>
+                <div>
+                    <h2 className='mb-5'>
                         <TypeAnimation
                             sequence={[
                                 "Let's broaden our relation",
@@ -82,18 +84,20 @@ function ContactMe(props) {
                             repeat={Infinity}
                         />
                     </h2>
-                    <a href='https://www.linkedin.com/in/inderjit-shahi-b9880a201/' target='blank'>
-                        <i className='fa fa-linkedin-square'></i>
-                    </a>
-                    <a href='https://www.instagram.com/inderjitshahi/?hl=en' target='blank'>
-                        <i className='fa fa-instagram'></i>
-                    </a>
-                    <a href='https://github.com/inderjitshahi' target='blank'>
-                        <i className='fa fa-github-square'></i>
-                    </a>
-                    <a href='https://www.facebook.com/profile.php?id=100011757080675' target='blank'>
-                        <i className='fa fa-facebook-square'></i>
-                    </a>
+                    <div className='flex space-x-4 md:ml-32 md:scale-125'>
+                        <a href='https://www.linkedin.com/in/inderjit-shahi-b9880a201/' target='blank'>
+                            <BsLinkedin />
+                        </a>
+                        <a href='https://www.instagram.com/inderjitshahi/?hl=en' target='blank'>
+                            <AiFillInstagram />
+                        </a>
+                        <a href='https://github.com/inderjitshahi' target='blank'>
+                            <AiFillGithub />
+                        </a>
+                        <a href='https://www.facebook.com/profile.php?id=100011757080675' target='blank'>
+                            <BsFacebook />
+                        </a>
+                    </div>
                 </div>
                 <div className={Classes['back-form']}>
                     <div className={Classes['img-back']} >
@@ -112,7 +116,7 @@ function ContactMe(props) {
                         <textarea className={Classes['textarea']} type={"text"} value={message} onChange={handleMessage} />
 
                         <div className={Classes['send-btn']}>
-                            <button className='p-5'>
+                            <button className='py-3 text-violet-700 border-l-purple-600 text-xl font-semibold bg-violet-300 rounded-xl  px-16'>
                                 Send<i className='fa fa-paper-plane' />
                                 {bool ? (<b className={Classes['load']}>
                                     <Image src={load1} alt="no internet" />

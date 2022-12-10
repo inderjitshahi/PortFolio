@@ -68,14 +68,14 @@
     font-size: 1rem;
     white-space: nowrap;
     font-family: "Poppins SemiBold";
-    margin-left: 1rem;
+    margin-left: 3rem;
 }
 .bullet-logo{
     /* height: 3rem; */
     /* margin: 0 3rem; */
 }
 .bullet-icons{
-     width: 3rem;
+     width: 2rem;
      height: 100%;
      z-index: 1;
      background-color: #8414e0;

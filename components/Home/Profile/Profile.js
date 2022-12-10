@@ -2,25 +2,27 @@ import React from 'react';
 import Classes from './Profile.module.css'
 import { TypeAnimation } from 'react-type-animation'
 import { scroller } from 'react-scroll';
+import { BsFacebook, BsLinkedin} from 'react-icons/bs'
+import { AiFillInstagram, AiFillGithub  } from 'react-icons/ai'
 
 function Profile(props) {
     return (
         <div className={Classes['profile-container']}>
-            <div className={Classes['profile-parent']}>
+            <div className='flex flex-col md:flex-row  justify-content:center'>
                 <div className={Classes['profile-details']}>
                     <div className={Classes['colz']}>
-                        <div className={Classes['colz-icon']}>
+                        <div className="flex space-x-4 cursor-pointer scale-150 mb-4">
                             <a href='https://www.linkedin.com/in/inderjit-shahi-b9880a201/' target='blank'>
-                                <i className='fa fa-linkedin-square'></i>
+                                <BsLinkedin/>
                             </a>
                             <a href='https://www.instagram.com/inderjitshahi/?hl=en' target='blank'>
-                                <i className='fa fa-instagram'></i>
+                                <AiFillInstagram />
                             </a>
                             <a href='https://github.com/inderjitshahi' target='blank'>
-                                <i className='fa fa-github-square'></i>
+                                <AiFillGithub />
                             </a>
                             <a href='https://www.facebook.com/profile.php?id=100011757080675' target='blank'>
-                                <i className='fa fa-facebook-square'></i>
+                                <BsFacebook />
                             </a>
                         </div>
                     </div>
@@ -57,7 +59,7 @@ function Profile(props) {
                         </span>
                     </div>
                     <div className={Classes['profile-options']}>
-                        <button className={`btn primary-btn ${Classes.btn}`} onClick={() => {
+                        <button className='py-2 text-violet-700 border-l-purple-600 text-xl font-semibold bg-violet-300 rounded-xl  px-5' onClick={() => {
                             scroller.scrollTo('contactMe', {
                                 duration: 800,
                                 delay: 0,
@@ -68,7 +70,7 @@ function Profile(props) {
                             Hire Me{" "}
                         </button>
                         <a href='Resume-Inderjit-Shahi.pdf' download="Inderjit_Shahi_Resume.pdf">
-                            <button className={`btn highlighted-btn ${Classes['highlighted-btn']}`}>Get Resume</button>
+                            <button className='py-3 border-l-purple-600 text-xl font-semibold bg-violet-300 rounded-xl  px-5 ml-2 text-violet-700'>Get Resume</button>
                         </a>
                     </div>
                 </div>

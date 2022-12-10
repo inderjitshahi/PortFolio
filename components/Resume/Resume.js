@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Classes from './Resume.module.css';
 import ScreenHeading from '../Utilities/ScreenHeading/ScreenHeading';
-
+import {FaBullseye} from 'react-icons/fa'
 function Resume(props) {
     const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
     const [carousalOffsetStyle, setCarousalOfSetStyle] = useState({});
@@ -162,10 +162,7 @@ function Resume(props) {
                 className={index === selectedBulletIndex ? `${Classes['bullet']} ${Classes['selected-bullet']}` : Classes['bullet']}
                 key={index}
             >
-                <img className={Classes['bullet-logo']}
-                    src={require(`../assets/Resume/${bullet.logo}`)}
-                    alt={"Can't load Right now"}
-                />
+                <FaBullseye className='scale-150'/>
                 <span className={Classes['bullet-label']}>{bullet.label}</span>
             </div>))
     };
@@ -187,7 +184,6 @@ function Resume(props) {
                 <div className={Classes['resume-card']}>
                     <div className={Classes['resume-bullets']}>
                         <div className={Classes['bullet-container']}>
-                            <div className={Classes['bullet-icons']}></div>
                             <div className={Classes['bullets']}>{getBullets()}</div>
                         </div>
                     </div>
