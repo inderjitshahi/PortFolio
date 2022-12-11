@@ -8,9 +8,11 @@ function Home() {
         <Fragment>
             <Head>
                 <title>Inderjit Shahi</title>
+                <meta name="description" content="Personal Portfolio WebSite For Inderjit Shahi"></meta>
+                <meta name="author" content="Inderjit Shahi"></meta>
             </Head>
             <ToastContainer />
-            <Component />
+            <Component/>
         </Fragment>
     );
 }
