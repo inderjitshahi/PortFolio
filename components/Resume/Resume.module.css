@@ -105,7 +105,7 @@
     font-weight: bold;
 }
 .resume-heading-description{
-    font-size: .89rem;
+    font-size: .8rem;
 }
 .heading-bullet{
     position:absolute;
@@ -118,7 +118,7 @@
 }
 
 .resume-sub-heading{
-    font-size: .9rem;
+    font-size: .8rem;
     font-family: "Poppins SemiBold ";
     color: #111;
     margin: .5rem 0 0 0;
@@ -209,5 +209,23 @@
     }
     .selected-bullet{
         width: 100%;
+    }
+}
+@media only screen and (max-width:600px){
+    .resume-sub-heading{
+        font-size: .8rem;
+        margin: .2rem 0 0 0;
+    }
+    .heading-date{
+        padding:.25rem .5rem;
+        font-size: .8rem;
+        border-radius: 1rem;
+        color: white;
+    }
+}
+@media only screen and (max-width:330px){
+    .resume-sub-heading{
+        font-size: .6rem;
+        margin: 0 0 0 0;
     }
 }

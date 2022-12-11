@@ -36,17 +36,16 @@ function Resume(props) {
     ];
 
     const programmingSkillsDetails = [
-        { skill: "C++", ratingPercentage: 90 },
-        { skill: "Data Structure and Algorithm", ratingPercentage: 90 },
+        { skill: "C++", ratingPercentage: 99 },
+        { skill: "Data Structure and Algorithm", ratingPercentage: 95 },
         { skill: "JavaScript", ratingPercentage: 85 },
-        { skill: "React Js", ratingPercentage: 80 },
-        { skill: "React Native", ratingPercentage: 50 },
+        { skill: "React Js", ratingPercentage: 95 },
         { skill: "Express JS", ratingPercentage: 85 },
         { skill: "Node JS", ratingPercentage: 85 },
-        { skill: "SQL", ratingPercentage: 90 },
-        { skill: "MongoDB", ratingPercentage: 70 },
-        { skill: "Material UI", ratingPercentage: 90 },
-        { skill: "NextJS", ratingPercentage: 70 },
+        { skill: "SQL", ratingPercentage: 95 },
+        { skill: "MongoDB", ratingPercentage: 85 },
+        { skill: "Material UI", ratingPercentage: 95 },
+        { skill: "NextJS", ratingPercentage: 95 },
     ];
 
     const projectDetails = [
