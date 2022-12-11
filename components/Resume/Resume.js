@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Classes from './Resume.module.css';
 import ScreenHeading from '../Utilities/ScreenHeading/ScreenHeading';
-import {FaBullseye} from 'react-icons/fa'
+import { FaBullseye } from 'react-icons/fa'
 function Resume(props) {
     const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
     const [carousalOffsetStyle, setCarousalOfSetStyle] = useState({});
@@ -12,7 +12,7 @@ function Resume(props) {
             <div className={Classes['heading-bullet']}></div>
             <span>{
                 props.heading ?
-                    (props.url ? <a href={props.url} target="blank">{props.heading}</a> :props.heading) :
+                    (props.url ? <a href={props.url} target="blank">{props.heading}</a> : props.heading) :
                     ''}</span>
             {props.fromDate && props.toDate ?
                 <div className={Classes['heading-date']}>{props.fromDate + "-" + props.toDate}</div>
@@ -55,21 +55,21 @@ function Resume(props) {
             duration: { fromDate: 2022, toDate: 2022 },
             description: "A Personal Portfolio website to showcase all my details and projects at one place",
             subHeading: "Technology Used: React JS | Redux | Material UI | React-Scroll | React-reveal | ExpressJS | SendGrid",
-            url:"https://inderjitshahi.herokuapp.com/"
+            url: "https://port-folio-jydi.vercel.app/"
         },
         {
             title: "ISSHOP",
             duration: { fromDate: 2020, toDate: 2021 },
             description: "An E-commerce website that allows buying/Selling products to strengthen small vendors to enhance their business",
             subHeading: "Technology Used: MongoDB | Express.js | Stripe | SendGrid | PDFKit | Bcrypt",
-            url:"https://isshop.herokuapp.com/"
+            url: "https://github.com/inderjitshahi/ISShop"
         },
         {
             title: "ISMovies",
             duration: { fromDate: 2022, toDate: 2023 },
             description: " A MERN stack Movie Review Application that allows you to Rate, Upload, and Review movies of different Genres, Actors/Actresses, and many more features",
             subHeading: "Technology Used: : React.js | Redux | Node.js| MongoDB | Express.js | SendGrid | Mongoose | Bcrypt | Material UI",
-            url:""
+            url: ""
         },
     ];
 
@@ -162,7 +162,7 @@ function Resume(props) {
                 className={index === selectedBulletIndex ? `${Classes['bullet']} ${Classes['selected-bullet']}` : Classes['bullet']}
                 key={index}
             >
-                <FaBullseye className='scale-150'/>
+                <FaBullseye className='scale-150' />
                 <span className={Classes['bullet-label']}>{bullet.label}</span>
             </div>))
     };

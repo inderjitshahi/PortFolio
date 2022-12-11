@@ -58,8 +58,8 @@ function Profile(props) {
                             Building Applications with frontend and Backend.
                         </span>
                     </div>
-                    <div className={Classes['profile-options']}>
-                        <button className='py-2 text-violet-700 border-l-purple-600 text-xl font-semibold bg-violet-300 rounded-xl  px-5' onClick={() => {
+                    <div className='flex justify-center'>
+                        <button className='button ' onClick={() => {
                             scroller.scrollTo('contactMe', {
                                 duration: 800,
                                 delay: 0,
@@ -69,8 +69,8 @@ function Profile(props) {
                             {" "}
                             Hire Me{" "}
                         </button>
-                        <a href='Resume-Inderjit-Shahi.pdf' download="Inderjit_Shahi_Resume.pdf">
-                            <button className='py-3 border-l-purple-600 text-xl font-semibold bg-violet-300 rounded-xl  px-5 ml-2 text-violet-700'>Get Resume</button>
+                        <a className='flex-frow' href='Resume-Inderjit-Shahi.pdf' download="Inderjit_Shahi_Resume.pdf">
+                            <button className='button ml-2'>Get Resume</button>
                         </a>
                     </div>
                 </div>

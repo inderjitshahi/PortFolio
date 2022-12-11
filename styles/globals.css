@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .button{
+        @apply py-2 flex-grow hover:bg-violet-400 active:scale-95 transition duration-100 transform ease-out border-l-purple-600 text-xl font-semibold bg-violet-300 rounded-xl  px-5  text-violet-700
+    }
+}

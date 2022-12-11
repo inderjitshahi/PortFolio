@@ -40,8 +40,8 @@ function AboutMe(props) {
                             </div>
                             {renderHighlight}
                         </div>
-                        <div className={Classes['about-me-options']} >
-                            <button className='py-3 text-violet-700 border-l-purple-600 text-lg font-semibold bg-violet-300 rounded-xl  px-16' onClick={() => {
+                        <div className='flex flex-col sm:flex-row' >
+                            <button className='button mb-2 sm:mb-0' onClick={() => {
                             scroller.scrollTo('contactMe', {
                                 duration: 600,
                                 delay: 0,
@@ -51,8 +51,8 @@ function AboutMe(props) {
                                 {" "}
                                 Hire Me{" "}
                             </button>
-                            <a href='Resume-Inderjit-Shahi.pdf' download="Inderjit_Shahi_Resume.pdf">
-                                <button className='py-3 ml-2 text-violet-700 border-l-purple-600 text-lg font-semibold bg-violet-300 rounded-xl  px-16'>Get Resume</button>
+                            <a className='button sm:ml-2 text-center' href='Resume-Inderjit-Shahi.pdf' download="Inderjit_Shahi_Resume.pdf">
+                                <button >Get Resume</button>
                             </a>
                         </div>
                     </div>

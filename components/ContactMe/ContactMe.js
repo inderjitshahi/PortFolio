@@ -71,7 +71,7 @@ function ContactMe(props) {
             />
             <div className='flex flex-col  sm:mx-2 md:mx-10 bg-violet-600 rounded-xl p-5'>
                 <div>
-                    <h2 className='mb-5'>
+                    <h2 className='mb-5 text-3xl'>
                         <TypeAnimation
                             sequence={[
                                 "Let's broaden our relation",
@@ -106,17 +106,17 @@ function ContactMe(props) {
                     </div>
                     <form onSubmit={formHandler} className={Classes['form']}>
                         <p className={Classes['form-p']}>{banner}</p>
-                        <label htmlFor='name'>Name</label>
+                        <label htmlFor='name' className='text-white'>Name</label>
                         <input className={Classes['form-input']} type={"text"} value={name} onChange={handleName} />
 
-                        <label htmlFor='email'>Email</label>
+                        <label htmlFor='email' className='text-white'>Email</label>
                         <input className={Classes['form-input']} type={"email"} value={email} onChange={handleEmail} />
 
-                        <label htmlFor='message'>Message</label>
+                        <label htmlFor='message' className='text-white'>Message</label>
                         <textarea className={Classes['textarea']} type={"text"} value={message} onChange={handleMessage} />
 
-                        <div className={Classes['send-btn']}>
-                            <button className='py-3 text-violet-700 border-l-purple-600 text-xl font-semibold bg-violet-300 rounded-xl  px-16'>
+                        <div className="flex">
+                            <button className='button'>
                                 Send<i className='fa fa-paper-plane' />
                                 {bool ? (<b className={Classes['load']}>
                                     <Image src={load1} alt="no internet" />
