@@ -26,7 +26,7 @@ export default function handler(req, res) {
             </ul>
             <hr>
             <h3>Message</h3>
-            <p style="font-weight:bold; font-style: italic;">"${data.message}"</p>
+            <p style="font-weight:bold; font-style:italic;">"${data.message}"</p>
           </div>
         `,
     }).then(response => {
