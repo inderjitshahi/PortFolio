@@ -36,7 +36,7 @@ function ContactMe(props) {
                 message,
             }
             setBool(true);
-            const res = await axios.post(`/contact`, data);
+            const res = await axios.post(`/api/hello`, data);
             // console.log(res);
             if (name.length === 0 || (email.length === 0 || !email.includes('@')) || message.length === 0) {
                 setBanner(res.data.msg);
@@ -116,7 +116,7 @@ function ContactMe(props) {
                         <textarea className={Classes['textarea']} type={"text"} value={message} onChange={handleMessage} />
 
                         <div className="flex">
-                            <button className='button'>
+                            <button className='button bg-white hover:bg-white'>
                                 Send<i className='fa fa-paper-plane' />
                                 {bool ? (<b className={Classes['load']}>
                                     <Image src={load1} alt="no internet" />

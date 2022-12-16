@@ -7,8 +7,8 @@
 }
 
 .about-me-parent {
-    max-width: 50rem;
-    width: 70%;
+    max-width: 80rem;
+    width: 80%;
 }
 
 .about-me-card {
@@ -17,13 +17,7 @@
     box-shadow: 0 0 1rem -.1rem rgb(83, 78, 78);
 }
 
-.about-me-profile {
-    width: 50%;
-    background-image: url('../assets/AboutMe/me.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 .about-me-details {
     width: 48%;
@@ -85,8 +79,11 @@
 }
 
 @media only screen and (max-width:898px) {
-    .about-me-profile {
+    /* .about-me-profile {
         display: none;
+    } */
+    .about-me-card{
+        flex-direction: column;
     }
 
     .about-me-details {
@@ -96,6 +93,9 @@
 
 @media only screen and (max-width:466px) {
 
+    .about-me-parent{
+        width: 90%;
+    }
     .about-me-options {
         flex-direction: column;
     }

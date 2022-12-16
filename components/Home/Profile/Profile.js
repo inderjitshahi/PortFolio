@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation'
 import { scroller } from 'react-scroll';
 import { BsFacebook, BsLinkedin} from 'react-icons/bs'
 import { AiFillInstagram, AiFillGithub  } from 'react-icons/ai'
+import Link from 'next/link';
 
 function Profile(props) {
     return (
@@ -34,19 +35,15 @@ function Profile(props) {
                     </div>
                     <div className={Classes['profile-details-role']}>
                         {" "}
-                        <h1>
+                        <h1 className='overflow-hidden'>
                             {" "}
                             <TypeAnimation
                                 sequence={[
-                                    "Enthusiastic Developer🙋‍♂️",
+                                    "MERN Developer",
                                     1000,
-                                    "Full Stack MERN Developer💯",
+                                    "Competitive Programmer",
                                     1000,
-                                    "Cross Platform v🌐",
-                                    1000,
-                                    "React/React Native Dev📱",
-                                    1000,
-                                    "Competitive Programmer👨‍💻",
+                                    "Freelancer",
                                     1000,
                                 ]}
                                 // wrapper="div"
@@ -55,20 +52,10 @@ function Profile(props) {
                             />
                         </h1>
                         <span className={Classes['profile-role-tagline']}>
-                            Building Applications with frontend and Backend.
+                            Passionate to Learn and Grow
                         </span>
                     </div>
                     <div className='flex justify-center'>
-                        <button className='button ' onClick={() => {
-                            scroller.scrollTo('contactMe', {
-                                duration: 800,
-                                delay: 0,
-                                smooth: 'easeInOutQuart'
-                            })
-                        }}>
-                            {" "}
-                            Hire Me{" "}
-                        </button>
                         <a className='flex-frow' href='Resume-Inderjit-Shahi.pdf' download="Inderjit_Shahi_Resume.pdf">
                             <button className='button ml-2'>Get Resume</button>
                         </a>

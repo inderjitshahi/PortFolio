@@ -1,19 +1,17 @@
 import React from 'react';
 import ScreenHeading from '../Utilities/ScreenHeading/ScreenHeading';
 import Classes from './AboutMe.module.css';
-import {scroller} from 'react-scroll';
+import Image from 'next/image';
 function AboutMe(props) {
     const SCREEN_CONSTANT = {
         description: "Full stack web and mobile developer with background knowledge of MERN stack with redux, along with a knock of building application with utmost efficiency, strong professional with a B.Tech willing to be an asset far an organization. ",
         highlights: {
             bullets: [
-                "Full Stack web and mobile Development",
+                "Full Stack MERN Developer",
                 "Proficient in Data Structure and Algorithms",
-                "Problem Solving",
-                "Interactive Front End as per the design",
-                "React and React Native",
-                "Redux for State Management",
-                "Building REST API, Managing database",
+                "Problem Solving and Team Management",
+                "ReactJS and NextJS",
+                "SQL and MongoDB"
             ],
             heading: "Here are few highlights:"
         },
@@ -26,11 +24,18 @@ function AboutMe(props) {
     })
     return (
 
-        <div id={'aboutMe'} className={`${Classes['about-me-container']} ${Classes['screen-container']}`}>
-            <div className={Classes['about-me-parent']}>
+        <div id={'aboutMe'} className={`${Classes['about-me-container']} ${Classes['screen-container']} `}>
+            <div className={`${Classes['about-me-parent']}`}>
                 <ScreenHeading title={"About Me"} subHeading={'Why Choose Me?'} />
                 <div className={Classes['about-me-card']} >
-                    <div className={Classes['about-me-profile']}></div>
+                    <div className="relative w-[100%] h-[20rem] md:h-auto md:w-[50%]">
+                        <Image
+                            src="/me.jpg"
+                            objectFit='cover'
+                            fill
+                            alt="profile image"
+                        />
+                    </div>
                     <div className={Classes['about-me-details']}>
                         <span className={Classes['about-me-description']}>{SCREEN_CONSTANT.description}
                         </span>
@@ -41,16 +46,6 @@ function AboutMe(props) {
                             {renderHighlight}
                         </div>
                         <div className='flex flex-col sm:flex-row' >
-                            <button className='button mb-2 sm:mb-0' onClick={() => {
-                            scroller.scrollTo('contactMe', {
-                                duration: 600,
-                                delay: 0,
-                                smooth: 'easeInOutQuart'
-                            })
-                        }}>
-                                {" "}
-                                Hire Me{" "}
-                            </button>
                             <a className='button sm:ml-2 text-center' href='Resume-Inderjit-Shahi.pdf' download="Inderjit_Shahi_Resume.pdf">
                                 <button >Get Resume</button>
                             </a>
