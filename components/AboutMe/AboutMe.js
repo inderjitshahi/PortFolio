@@ -46,7 +46,8 @@ function AboutMe(props) {
                             {renderHighlight}
                         </div>
                         <div className='flex flex-col sm:flex-row' >
-                            <a className='button sm:ml-2 text-center' href='Resume-Inderjit-Shahi.pdf' download="Inderjit_Shahi_Resume.pdf">
+                            <a className='button sm:ml-2 text-center' href='https://drive.google.com/uc?id=10pnEXBJazd-MsOARzoWoqGBGwpRYztmd
+' download="Inderjit_Shahi_Resume.pdf">
                                 <button >Get Resume</button>
                             </a>
                         </div>
