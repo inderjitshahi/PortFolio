@@ -59,7 +59,7 @@
         width: 80%;
     }
 }
-@media only screen and (max-width:970px){
+@media only screen and (max-width:500px){
     .header-hamburger{
         display: block;
     }
@@ -100,5 +100,10 @@
         left:0;
         opacity: 1;
     }
+
+    .header-logo{
+        font-size: 2rem;
+    }
 }
+
 
