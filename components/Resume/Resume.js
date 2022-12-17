@@ -50,11 +50,18 @@ function Resume(props) {
 
     const projectDetails = [
         {
+            title: "ISBlog",
+            duration: { fromDate: 2022, toDate: 2023 },
+            description: " A NextJS Blogging Application that allows you to Write, Upload, Read and Review Articles of Different Categories, Topics and many more features. With excellent user experience using Server Side Rendering ",
+            subHeading: "Technology Used: : React.js | NextJS | Firebase| TailwindCSS",
+            url: "https://is-blog.vercel.app/"
+        },
+        {
             title: "Personal Portfolio Website",
             duration: { fromDate: 2022, toDate: 2022 },
             description: "A Personal Portfolio website to showcase all my details and projects at one place",
             subHeading: "Technology Used: React JS | Redux | Material UI | React-Scroll | React-reveal | ExpressJS | SendGrid",
-            url: "https://port-folio-jydi.vercel.app/"
+            url: "https://port-folio-vxwv.vercel.app/"
         },
         {
             title: "ISSHOP",
@@ -62,13 +69,6 @@ function Resume(props) {
             description: "An E-commerce website that allows buying/Selling products to strengthen small vendors to enhance their business",
             subHeading: "Technology Used: MongoDB | Express.js | Stripe | SendGrid | PDFKit | Bcrypt",
             url: "https://github.com/inderjitshahi/ISShop"
-        },
-        {
-            title: "ISMovies",
-            duration: { fromDate: 2022, toDate: 2023 },
-            description: " A MERN stack Movie Review Application that allows you to Rate, Upload, and Review movies of different Genres, Actors/Actresses, and many more features",
-            subHeading: "Technology Used: : React.js | Redux | Node.js| MongoDB | Express.js | SendGrid | Mongoose | Bcrypt | Material UI",
-            url: ""
         },
     ];
 
@@ -107,8 +107,8 @@ function Resume(props) {
             {programmingSkillsDetails.map((skill, index) => (<div className={Classes['skill-parent']} key={index}>
                 <div className={Classes['heading-bullet']}></div>
                 <span>{skill.skill}</span>
-                <div className={Classes['skill-percentage']}>
-                    <div style={{ width: skill.ratingPercentage + "%" }} className={Classes['active-percentage-bar']}>
+                <div className={`${Classes['skill-percentage']} rounded-lg`}>
+                    <div style={{ width: skill.ratingPercentage + "%" }} className={`${Classes['active-percentage-bar']} rounded-lg`}>
                     </div>
                 </div>
             </div>))

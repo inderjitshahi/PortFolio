@@ -56,7 +56,7 @@ function Profile(props) {
                         </span>
                     </div>
                     <div className='flex justify-center'>
-                        <a className='flex-frow' href='Resume-Inderjit-Shahi.pdf' download="Inderjit_Shahi_Resume.pdf">
+                        <a className='flex-frow' href='https://drive.google.com/uc?id=10pnEXBJazd-MsOARzoWoqGBGwpRYztmd' download="Inderjit_Shahi_Resume.pdf">
                             <button className='button ml-2'>Get Resume</button>
                         </a>
                     </div>
