@@ -1,4 +1,3 @@
-import React from 'react';
 import { TOTAL_SCREENS } from './Utilities/CommonUtilities';
 import Zoom from 'react-reveal/Zoom'
 function Component(props) {
