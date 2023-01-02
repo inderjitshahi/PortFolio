@@ -5,7 +5,7 @@ function Footer(props) {
     return (
         <div className={Classes['footer-container']}>
             <div className={Classes['footer-parent']}>
-                <Image src={require('../../assets/Home/shape-bg.png')} alt="Loading"/>
+                <Image src={require('../../assets/Home/shape-bg.png')} alt="Loading" className='dark:hidden'/>
             </div>
         </div>
     );

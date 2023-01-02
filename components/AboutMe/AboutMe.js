@@ -1,5 +1,5 @@
 import React from 'react';
-import ScreenHeading from '../Utilities/ScreenHeading/ScreenHeading';
+import ScreenHeading from '../ScreenHeading';
 import Classes from './AboutMe.module.css';
 import Image from 'next/image';
 function AboutMe(props) {
@@ -24,7 +24,7 @@ function AboutMe(props) {
     })
     return (
 
-        <div id={'aboutMe'} className={`${Classes['about-me-container']} ${Classes['screen-container']} `}>
+        <div id={'aboutMe'} className={`${Classes['about-me-container']} ${Classes['screen-container']} dark:text-white`}>
             <div className={`${Classes['about-me-parent']}`}>
                 <ScreenHeading title={"About Me"} subHeading={'Why Choose Me?'} />
                 <div className={Classes['about-me-card']} >

@@ -1,2 +1,7 @@
 <a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">Whatsapp icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+<a href="https://iconscout.com/3ds/c-language-logo" target="_blank">C++ Language Logo 3D Icon</a> by <a href="https://iconscout.com/contributors/fahrulsaputra7" target="_blank">Fahrul Saputra</a>
+<a href="https://iconscout.com/3ds/java-script" target="_blank">Java-script Logo 3D Icon</a> by <a href="https://iconscout.com/contributors/unicons">Unicons Font</a> on <a href="https://iconscout.com">IconScout</a>
+<a href="https://iconscout.com/3ds/react-native" target="_blank">React Native Logo Logo 3D Illustration</a> on <a href="https://iconscout.com">IconScout</a>
+<a href="https://iconscout.com/icons/mongodb" target="_blank">Mongodb Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
+Material Ui icon by Icons8

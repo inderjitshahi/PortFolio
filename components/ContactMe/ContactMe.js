@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import imgBack from '../images/mailz.jpeg';
 import load1 from '../images/load2.gif';
-import ScreenHeading from '../Utilities/ScreenHeading/ScreenHeading';
+import ScreenHeading from '../ScreenHeading';
 import Classes from './ContactMe.module.css';
 import { TypeAnimation } from 'react-type-animation';
 import axios from 'axios';

@@ -5,7 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        'code': "url('/components/assets/Home/shapeDark-bg.png')",
+        'light-code': "url('/components/assets/Home/shapeDark-bg.png')",
+       })
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
+  darkMode: "class",
 }

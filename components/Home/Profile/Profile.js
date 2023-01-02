@@ -1,7 +1,6 @@
 import React from 'react';
 import Classes from './Profile.module.css'
 import { TypeAnimation } from 'react-type-animation'
-import { scroller } from 'react-scroll';
 import { BsFacebook, BsLinkedin} from 'react-icons/bs'
 import { AiFillInstagram, AiFillGithub  } from 'react-icons/ai'
 import Link from 'next/link';
