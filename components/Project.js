@@ -51,7 +51,7 @@ function Project({ projectDetails }) {
 
                         <img
                             src={projectDetails[0].image}
-                            className="block w-full h-[60vh] md:h-auto brightness-50"
+                            className="block w-full h-[60vh] md:h-auto brightness-50 object-cover"
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
@@ -66,7 +66,7 @@ function Project({ projectDetails }) {
                     <div className="carousel-item relative float-left w-full">
                         <img
                             src={projectDetails[1].image}
-                            className="block w-full h-[60vh] md:h-auto brightness-50"
+                            className="block w-full h-[60vh] md:h-auto brightness-50 object-cover"
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
@@ -81,7 +81,7 @@ function Project({ projectDetails }) {
                     <div className="carousel-item relative float-left w-full">
                         <img
                             src={projectDetails[2].image}
-                            className="block w-full h-[60vh] md:h-auto brightness-50"
+                            className="block w-full h-[60vh] md:h-auto brightness-50 object-cover"
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
@@ -96,7 +96,7 @@ function Project({ projectDetails }) {
                     <div className="carousel-item relative float-left w-full">
                         <img
                             src={projectDetails[3].image}
-                            className="block w-full h-[60vh] md:h-auto brightness-50"
+                            className="block w-full h-[60vh] md:h-auto brightness-50 object-cover"
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
@@ -111,7 +111,7 @@ function Project({ projectDetails }) {
                     <div className="carousel-item relative float-left w-full ">
                         <img
                             src={projectDetails[4].image}
-                            className="block w-full h-[60vh] md:h-auto brightness-50"
+                            className="block w-full h-[60vh] md:h-auto brightness-50 object-cover"
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
