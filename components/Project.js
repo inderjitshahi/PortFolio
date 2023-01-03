@@ -115,7 +115,7 @@ function Project({ projectDetails }) {
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
-                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl contrast-200'>{projectDetails[3].title}</p>
+                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl contrast-200'>{projectDetails[4].title}</p>
 
                             <h5 className='space-x-5 flex justify-center px-5 rounded-lg mb-2 drop-shadow-2xl'>
                                 <Link href={projectDetails[4].gitUrl} target="_blank"><VscGithub className='text-2xl md:text-4xl text-yellow-500 font-bold contrast-200' /></Link>
