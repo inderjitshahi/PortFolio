@@ -9,11 +9,11 @@ module.exports = {
       backgroundImage: (theme) => ({
         'code': "url('/components/assets/Home/shapeDark-bg.png')",
         'light-code': "url('/components/assets/Home/shapeDark-bg.png')",
-       })
+      })
     },
   },
   plugins: [
-    require('tw-elements/dist/plugin')
+    require('tw-elements/dist/plugin'),
   ],
   darkMode: "class",
 }

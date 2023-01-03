@@ -1,6 +1,7 @@
 import React from 'react';
 import ScreenHeading from './ScreenHeading';
 import { BsGithub, BsGlobe } from 'react-icons/bs'
+import {VscGithub} from 'react-icons/vsc'
 import Link from 'next/link';
 function Project({ projectDetails }) {
     // console.log(projectDetails);
@@ -50,75 +51,75 @@ function Project({ projectDetails }) {
 
                         <img
                             src={projectDetails[0].image}
-                            className="block w-full"
+                            className="block w-full h-[60vh] md:h-auto brightness-50"
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
-                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl'>{projectDetails[0].title}</p>
+                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl contrast-200'>{projectDetails[0].title}</p>
 
-                            <h5 className='space-x-10 flex justify-center px-5 rounded-lg mb-2'>
-                                <Link href={projectDetails[0].gitUrl} target="_blank"><BsGithub className='text-2xl md:text-4xl text-yellow-500 font-bold' /></Link>
-                                <Link href={projectDetails[0].webUrl} target="_blank"><BsGlobe className='text-2xl md:text-4xl text-yellow-500 font-bold' /></Link>
+                            <h5 className='space-x-5 flex justify-center px-5 rounded-lg mb-2'>
+                                <Link href={projectDetails[0].gitUrl} target="_blank"><VscGithub className='text-2xl md:text-4xl text-yellow-500 font-bold contrast-200' /></Link>
+                                <Link href={projectDetails[0].webUrl} target="_blank"><BsGlobe className='text-2xl md:text-4xl  text-yellow-500 font-bold contrast-200' /></Link>
                             </h5>
                         </div>
                     </div>
                     <div className="carousel-item relative float-left w-full">
                         <img
                             src={projectDetails[1].image}
-                            className="block w-full"
+                            className="block w-full h-[60vh] md:h-auto brightness-50"
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
-                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl'>{projectDetails[1].title}</p>
+                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl contrast-200'>{projectDetails[1].title}</p>
 
-                            <h5 className='space-x-10 flex justify-center px-5 rounded-lg mb-2 drop-shadow-2xl'>
-                                <Link href={projectDetails[1].gitUrl} target="_blank"><BsGithub className='text-2xl md:text-4xl text-yellow-500 font-bold' /></Link>
-                                <Link href={projectDetails[1].webUrl} target="_blank"><BsGlobe className='text-2xl md:text-4xl text-yellow-500 font-bold' /></Link>
+                            <h5 className='space-x-5 flex justify-center px-5 rounded-lg mb-2 drop-shadow-2xl'>
+                                <Link href={projectDetails[1].gitUrl} target="_blank"><VscGithub className='text-2xl md:text-4xl text-yellow-500 font-bold contrast-200' /></Link>
+                                <Link href={projectDetails[1].webUrl} target="_blank"><BsGlobe className='text-2xl md:text-4xl text-yellow-500 font-bold contrast-200' /></Link>
                             </h5>
                         </div>
                     </div>
                     <div className="carousel-item relative float-left w-full">
                         <img
                             src={projectDetails[2].image}
-                            className="block w-full"
+                            className="block w-full h-[60vh] md:h-auto brightness-50"
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
-                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl'>{projectDetails[2].title}</p>
+                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl contrast-200'>{projectDetails[2].title}</p>
 
-                            <h5 className='space-x-10 flex justify-center px-5 rounded-lg mb-2 drop-shadow-2xl'>
-                                <Link href={projectDetails[2].gitUrl} target="_blank"><BsGithub className='text-2xl md:text-4xl text-yellow-500 font-bold' /></Link>
-                                <Link href={projectDetails[2].webUrl} target="_blank"><BsGlobe className='text-2xl md:text-4xl text-yellow-500 font-bold' /></Link>
+                            <h5 className='space-x-5 flex justify-center px-5 rounded-lg mb-2 drop-shadow-2xl'>
+                                <Link href={projectDetails[2].gitUrl} target="_blank"><VscGithub className='text-2xl md:text-4xl text-yellow-500 font-bold contrast-200' /></Link>
+                                <Link href={projectDetails[2].webUrl} target="_blank"><BsGlobe className='text-2xl md:text-4xl text-yellow-500 font-bold contrast-200' /></Link>
                             </h5>
                         </div>
                     </div>
                     <div className="carousel-item relative float-left w-full">
                         <img
                             src={projectDetails[3].image}
-                            className="block w-full"
+                            className="block w-full h-[60vh] md:h-auto brightness-50"
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
-                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl'>{projectDetails[3].title}</p>
+                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl contrast-200'>{projectDetails[3].title}</p>
 
-                            <h5 className='space-x-10 flex justify-center px-5 rounded-lg mb-2 drop-shadow-2xl'>
-                                <Link href={projectDetails[3].gitUrl} target="_blank"><BsGithub className='text-2xl md:text-4xl text-yellow-500 font-bold' /></Link>
-                                <Link href={projectDetails[3].webUrl} target="_blank"><BsGlobe className='text-2xl md:text-4xl text-yellow-500 font-bold' /></Link>
+                            <h5 className='space-x-5 flex justify-center px-5 rounded-lg mb-2 drop-shadow-2xl'>
+                                <Link href={projectDetails[3].gitUrl} target="_blank"><VscGithub className='text-2xl md:text-4xl text-yellow-500 font-bold contrast-200' /></Link>
+                                <Link href={projectDetails[3].webUrl} target="_blank"><BsGlobe className='text-2xl md:text-4xl text-yellow-500 font-bold contrast-200' /></Link>
                             </h5>
                         </div>
                     </div>
-                    <div className="carousel-item relative float-left w-full">
+                    <div className="carousel-item relative float-left w-full ">
                         <img
                             src={projectDetails[4].image}
-                            className="block w-full"
+                            className="block w-full h-[60vh] md:h-auto brightness-50"
                             alt="..."
                         />
                         <div className="carousel-caption rounded-lg pb-2 flex flex-col justify-center absolute text-center text-black font-bold">
-                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl'>{projectDetails[3].title}</p>
+                            <p className=' text-yellow-500 font-bold text-2xl sm:text-4xl md:text-6xl contrast-200'>{projectDetails[3].title}</p>
 
-                            <h5 className='space-x-10 flex justify-center px-5 rounded-lg mb-2 drop-shadow-2xl'>
-                                <Link href={projectDetails[4].gitUrl} target="_blank"><BsGithub className='text-2xl md:text-4xl text-yellow-500 font-bold' /></Link>
-                                <Link href={projectDetails[4].webUrl} target="_blank"><BsGlobe className='text-2xl md:text-4xl text-yellow-500 font-bold' /></Link>
+                            <h5 className='space-x-5 flex justify-center px-5 rounded-lg mb-2 drop-shadow-2xl'>
+                                <Link href={projectDetails[4].gitUrl} target="_blank"><VscGithub className='text-2xl md:text-4xl text-yellow-500 font-bold contrast-200' /></Link>
+                                <Link href={projectDetails[4].webUrl} target="_blank"><BsGlobe className='text-2xl md:text-4xl text-yellow-500 font-bold contrast-200' /></Link>
                             </h5>
                         </div>
                     </div>
@@ -129,7 +130,7 @@ function Project({ projectDetails }) {
                     data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev"
                 >
-                    <span className="carousel-control-prev-icon inline-block bg-no-repeat bg-yellow-400" aria-hidden="true"></span>
+                    <span className="carousel-control-prev-icon inline-block bg-no-repeat  contrast-200" aria-hidden="true"></span>
                     <span className="visually-hidden ">Previous</span>
                 </button>
                 <button
@@ -138,7 +139,7 @@ function Project({ projectDetails }) {
                     data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="next"
                 >
-                    <span className="carousel-control-next-icon inline-block bg-no-repeat bg-yellow-400" aria-hidden="true"></span>
+                    <span className="carousel-control-next-icon inline-block bg-no-repeat contrast-200" aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
