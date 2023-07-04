@@ -5,6 +5,8 @@ import ScreenHeading from '../components/ScreenHeading';
 import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer/Footer';
+import {ImGithub} from 'react-icons/im';
+import {BsGlobe} from 'react-icons/bs'
 function experience({projects}) {
     return (
         <main className='dark:bg-black'>
@@ -25,23 +27,31 @@ function experience({projects}) {
                             subHeading={project.subheading}
                             title={project.title}
                         />
-                        <div className='border-0 flex flex-col md:flex-row py-5 px-12 text-white] items-center md:justify-between min-h-[90vh] bg-gradient-to-r from-[#692CF3] to-[#8B5CF6]'>
+                        <div className='border-0 flex flex-col space-x-5 md:flex-row py-5 px-12 text-white] items-center md:justify-between min-h-[90vh] bg-gradient-to-r to-[#B30AF5] from-[#F50AC2]'>
                             <div className='flex flex-col items-center justify-center h-full'>
                                 <div >
-                                    <p className='text-white text-center text-[#5cf68b] text-md md:text-xl'>
+                                    <p className='text-white text-center text-[#0AF5B3] text-md md:text-xl'>
                                         {project.begin} - {project.end}
                                     </p>
                                     <ul className='space-y-5 mt-5 list-disc'>
                                         {project.points.map((point,i)=>{
-                                            return <li key={i} className='text-white'>
+                                            return <li key={i} className='text-[#F5B30A] text-sm md:text-lg'>
                                                 {point}
                                             </li>
                                         })}
                                     </ul>
+                                    <div className='flex space-x-12 items-center justify-center mt-16'>
+                                        <Link href={project?.website} target='_blank'>
+                                            <ImGithub className=' h-8 w-8 md:h-12 md:w-12 text-[#0AF5B3]'/>
+                                        </Link>
+                                        <Link href={project?.github} target='_blank'>
+                                            <BsGlobe className='h-8 w-8 md:h-12 md:w-12 text-[#0AF5B3]'/>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
-                            <div className='w-[50vw] h-[50vh] relative mt-10 md:mt-0'>
-                                <Image src={project?.certificate?project?.certificate:'/not_found.svg'}
+                            <div className='w-[75vw] h-[60vh] relative mt-10 md:mt-0 rounded-lg overflow-hidden'>
+                                <Image src={project?.image?project?.image:'/not_found.svg'}
                                     loading="lazy"
                                     alt='Experience'
                                     fill
@@ -64,16 +74,42 @@ export async function getStaticProps(context) {
         {
             title: "CourseCove",
             subheading: "A REST API",
-            location: "Remote",
             begin: 'January, 2023',
             end:"May, 2023",
-            image:'',
-            github:"",
-            website:"",
+            image:'/project_images/coursecove.png',
+            github:"https://github.com/inderjitshahi/coursecove",
+            website:"https://coursecove.onrender.com/",
             points:[
                 "Led cross-functional team to develop Jansuvai complaint tracking system, benefiting 2 million citizens.",
                 "Demonstrated leadership and effective communication by coordinating design and client teams, ensuring seamless integration and timely delivery.",
                 "Resolved 1000+ complaints, streamlining management and reducing response times by 30%."
+            ]
+        },
+        {
+            title: "ISDashPro",
+            subheading: "A MERN Admin Dashboard",
+            begin: 'January, 2023',
+            end:"May, 2023",
+            image:'/project_images/isdashpro.png',
+            github:"https://github.com/inderjitshahi/ISDashPro/",
+            website:"https://isdashpro.onrender.com/",
+            points:[
+                "Designed data-intensive MERN project, Ishdashpro, using 1000+ data points for analysis and visualization. Integrated RESTful APIs into React admin dashboard, enabling comprehensive insights and data-driven decision-making.",
+                "Attained <50ms response time, seamlessly integrating Ishdashpro’s RESTful API backend with the frontend."
+            ]
+        },
+        {
+            title: "ISShop",
+            subheading: "An Express E-commerce",
+            begin: 'January, 2023',
+            end:"May, 2023",
+            image:'/project_images/isshop1.png',
+            github:"https://github.com/inderjitshahi/ISShop",
+            website:"https://isshop1.onrender.com/",
+            points:[
+                "Developed a secure and feature-rich web application using Express.js, MongoDB, and EJS, incorporating user authentication, payment processing with Stripe, and PDF generation.",
+                "Implemented robust security measures, including input sanitization, password hashing, and CSRF protection, to ensure the safety of user data.",
+                "Designed a responsive and user-friendly interface, optimizing the application for seamless usage across devices of different screen sizes."
             ]
         },
     ];

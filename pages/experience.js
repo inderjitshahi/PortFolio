@@ -37,7 +37,7 @@ function experience({exps}) {
                                     </p>
                                     <ul className='space-y-5 mt-5 list-disc'>
                                         {exp.points.map((point,i)=>{
-                                            return <li key={i} className='text-white'>
+                                            return <li key={i} className='text-[#F3692C]'>
                                                 {point}
                                             </li>
                                         })}

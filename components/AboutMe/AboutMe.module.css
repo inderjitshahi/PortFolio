@@ -3,18 +3,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0 0 0;
+    margin: 0rem 0 0 0; /*earlier 5rem*/
 }
 
 .about-me-parent {
-    max-width: 80rem;
-    width: 80%;
+    /* max-width: 80rem; */
+    /* width: 80%; */
 }
 
 .about-me-card {
     display: flex;
     width: 100%;
-    box-shadow: 0 0 1rem -.1rem rgb(83, 78, 78);
+    /* box-shadow: 0 0 1rem -.1rem rgb(83, 78, 78); */
 }
 
 

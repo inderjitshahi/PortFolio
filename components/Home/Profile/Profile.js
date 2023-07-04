@@ -2,7 +2,7 @@ import React from 'react';
 import Classes from './Profile.module.css'
 import { TypeAnimation } from 'react-type-animation'
 import { BsFacebook, BsLinkedin} from 'react-icons/bs'
-import { AiFillInstagram, AiFillGithub  } from 'react-icons/ai'
+import { AiFillInstagram, AiFillGithub, AiFillMail  } from 'react-icons/ai'
 import Link from 'next/link';
 
 function Profile(props) {
@@ -23,6 +23,9 @@ function Profile(props) {
                             </a>
                             <a href='https://www.facebook.com/profile.php?id=100011757080675' target='blank' className='hover:scale-125'>
                                 <BsFacebook className='hover:text-white hover:scale-125'/>
+                            </a>
+                            <a href = "mailto:inderjeetkmcs@gmail.com" target='blank' className='hover:scale-125'>
+                                <AiFillMail className='hover:text-white hover:scale-125'/>
                             </a>
                         </div>
                     </div>

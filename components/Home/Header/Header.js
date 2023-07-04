@@ -30,9 +30,11 @@ const Header = (props) => {
                         <span>~IS~</span>
                     </Link>
                 </div>
-                <div className='flex justify-center items-center space-x-3 md:space-x-10'>
-                    {!dark ? <MdDarkMode className='text-2xl hover:scale-125 cursor-pointer text-black' onClick={handleTheme} /> : <MdLightMode className='cursor-pointer hover:scale-125 text-2xl' onClick={handleTheme} />}
-                    <a href='https://is-blog.vercel.app/' rel='noreferrer' target="_blank" className=" text-white hover:text-black text-2xl no-underline">Blog</a>
+                <div className='flex justify-center items-center space-x-3 md:space-x-10 text-sm md:text-2xl'>
+                    <Link href={'/projects'}>Projects</Link>
+                    <Link href={'/experience'}>Experience</Link>
+                    {!dark ? <MdDarkMode className='hover:scale-125 cursor-pointer text-black' onClick={handleTheme} /> : <MdLightMode className='cursor-pointer hover:scale-125 text-2xl' onClick={handleTheme} />}
+                    <a href='https://is-blog.vercel.app/' rel='noreferrer' target="_blank" className=" text-white hover:text-black  no-underline">Blog</a>
                     <div className='border-blue-600 relative  rounded-full overflow-hidden cursor-pointer'>
                         <a href='https://wa.me/+919953048059'>
                             <Image
