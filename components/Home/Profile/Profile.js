@@ -12,17 +12,17 @@ function Profile(props) {
                 <div className={Classes['profile-details']}>
                     <div className={Classes['colz']}>
                         <div className="flex space-x-4 cursor-pointer scale-150 mb-4">
-                            <a href='https://www.linkedin.com/in/inderjit-shahi-b9880a201/' target='blank'>
-                                <BsLinkedin/>
+                            <a href='https://www.linkedin.com/in/inderjit-shahi-b9880a201/' target='blank' className='hover:scale-125'>
+                                <BsLinkedin  className='hover:text-white hover:scale-125'/>
                             </a>
-                            <a href='https://www.instagram.com/inderjitshahi/?hl=en' target='blank'>
-                                <AiFillInstagram />
+                            <a href='https://www.instagram.com/inderjitshahi/?hl=en' target='blank' className='hover:scale-125'>
+                                <AiFillInstagram className='hover:text-white hover:scale-125' />
                             </a>
-                            <a href='https://github.com/inderjitshahi' target='blank'>
-                                <AiFillGithub />
+                            <a href='https://github.com/inderjitshahi' target='blank' className='hover:scale-125'>
+                                <AiFillGithub className='hover:text-white hover:scale-125'/>
                             </a>
-                            <a href='https://www.facebook.com/profile.php?id=100011757080675' target='blank'>
-                                <BsFacebook />
+                            <a href='https://www.facebook.com/profile.php?id=100011757080675' target='blank' className='hover:scale-125'>
+                                <BsFacebook className='hover:text-white hover:scale-125'/>
                             </a>
                         </div>
                     </div>
@@ -51,18 +51,17 @@ function Profile(props) {
                             />
                         </h1>
                         <span className={Classes['profile-role-tagline']}>
-                            Passionate to Learn and Grow
+                        Code, Design, Inspire
                         </span>
                     </div>
-                    <div className='flex justify-center'>
+                    {/* <div className='flex justify-center'>
                         <a className='flex-frow' href='https://drive.google.com/uc?id=10pnEXBJazd-MsOARzoWoqGBGwpRYztmd' download="Inderjit_Shahi_Resume.pdf">
                             <button className='button ml-2'>Get Resume</button>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={Classes['profile-picture']}>
                     <div className={Classes['profile-picture-background']}>
-
                     </div>
                 </div>
             </div>

@@ -10,6 +10,7 @@ import Project from '../components/Project';
 import ContactMe from '../components/ContactMe/ContactMe';
 import Footer from '../components/Footer/Footer';
 import Skills from '../components/Skills';
+import Experience from '../components/Experience';
 function Home({ projectDetails, skills }) {
     return (
         <main className='dark:bg-black'>
@@ -30,14 +31,17 @@ function Home({ projectDetails, skills }) {
                 <Project projectDetails={projectDetails} />
             </Zoom>
             <Zoom>
-                <Skills skills={skills} />
+                <Experience/>
             </Zoom>
             <Zoom>
-                <ContactMe />
+                <Skills skills={skills} />
             </Zoom>
             <Zoom>
                 <Footer />
             </Zoom>
+            {/* <Zoom>
+                <ContactMe />
+            </Zoom> */}
         </main>
     );
 }

@@ -3,11 +3,11 @@ import ScreenHeading from './ScreenHeading';
 import Image from 'next/image';
 function Skills({ skills }) {
     return (
-        <div>
-            <ScreenHeading title='Skills' subHeading="How Much I Know" />
+        <div className='mb-16'>
+            <ScreenHeading title='Skills' subHeading="That Define Me" />
             <div className='flex gap-10 px-5 md:px-32  flex-wrap  items-center justify-center font-semibold text-xl z-10 relative '>
-                {skills.map(({ level, logo }) => (
-                    <div className='flex items-center justify-center group relative border-2 rounded-full overflow-hidden  hover:scale-125 transition duration-100 ease-in-out dark:bg-white'>
+                {skills.map(({ level, logo}) => (
+                    <div key={level} className='flex items-center justify-center group relative border-2 rounded-full overflow-hidden  hover:scale-125 transition duration-100 ease-in-out dark:bg-white'>
                         <div className='h-16 w-16  md:h-24 md:w-24 rounded-full overflow-hidden cursor-pointer group-hover:opacity-0 transition duration-100 ease-in-out'>
                             <Image
                                 src={logo}
