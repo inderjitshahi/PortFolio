@@ -26,7 +26,7 @@ function experience({exps}) {
                             subHeading={exp.company}
                             title={exp.title}
                         />
-                        <div className='border-0 flex flex-col md:flex-row py-5 px-12 text-white] items-center md:justify-between min-h-[90vh] bg-gradient-to-r from-[#692CF3] to-[#8B5CF6]'>
+                        <div className='border-0 flex flex-col md:flex-row  py-3 md:py-5 px-12  items-center md:justify-between  bg-gradient-to-r from-[#692CF3] to-[#8B5CF6]'>
                             <div className='flex flex-col items-center justify-center h-full'>
                                 <div >
                                     <p className='text-white text-center text-[#5cf68b] text-md md:text-xl'>
@@ -35,16 +35,16 @@ function experience({exps}) {
                                     <p className='text-white text-center text-[#5cf68b] text-md md:text-xl'>
                                         {exp.begin} - {exp.end}
                                     </p>
-                                    <ul className='space-y-5 mt-5 list-disc'>
+                                    <ul className=' space-y-3 md:space-y-5 mt-3 list-disc'>
                                         {exp.points.map((point,i)=>{
-                                            return <li key={i} className='text-[#F3692C]'>
+                                            return <li key={i} className='text-white text-sm md:text-lg '>
                                                 {point}
                                             </li>
                                         })}
                                     </ul>
                                 </div>
                             </div>
-                            <div className='w-[50vw] h-[50vh] relative mt-10 md:mt-0'>
+                            <div className='w-[50vw] h-[50vh] relative mt-3 md:mt-0'>
                                 <Image src={exp?.certificate?exp?.certificate:'/not_found.svg'}
                                     loading="lazy"
                                     alt='Experience'
