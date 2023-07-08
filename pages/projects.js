@@ -130,7 +130,7 @@ export async function getStaticProps(context) {
             subheading: "Data Visualization",
             begin: 'June, 2023',
             end: "Under Progress",
-            image: '',
+            image: '/project_images/olympic.png',
             github: "https://github.com/inderjitshahi/OlympISights",
             website: "https://olympisights.onrender.com/",
             points: [
