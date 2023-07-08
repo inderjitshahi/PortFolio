@@ -132,7 +132,7 @@ export async function getStaticProps(context) {
             end: "Under Progress",
             image: '',
             github: "https://github.com/inderjitshahi/OlympISights",
-            website: "",
+            website: "https://olympisights.onrender.com/",
             points: [
                 "Utilize the power of Python libraries such as Pandas, Matplotlib, NumPy, and Streamlit to create an interactive Olympic data visualization project. Explore and analyze historical Olympic data to uncover patterns, trends, and insights.",
                 "Leverage Pandas for data manipulation and analysis, Matplotlib for creating visually appealing charts and graphs, NumPy for efficient numerical operations, and Streamlit for building a user-friendly interface to showcase your Olympic data visualizations. Gain valuable insights into the Olympic Games and present them in an engaging and informative manner."
