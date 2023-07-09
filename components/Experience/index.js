@@ -9,8 +9,8 @@ function Experience() {
                 subHeading={"Professional Journey"}
                 title={"Experience"}
             />
-            <div className='border-0 flex flex-col md:flex-row  p-3 md:p-5 text-white] items-center md:justify-between md:pl-48 max-h-[90vh] bg-gradient-to-r from-[#692CF3] to-[#8B5CF6]'>
-                <div className='flex flex-col items-center justify-center h-full'>
+            <div className='grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-3  py-5 md:py-16 overflow-hidden place-items-center bg-gradient-to-r from-[#692CF3] to-[#8B5CF6]'>
+                <div className='flex flex-col items-center justify-center h-full p-5 md:p-10'>
                     <div >
                         <h3 className='text-white text-3xl md:text-6xl text-[#5cf68b] text-center'>Experience</h3>
                         <p className='text-white text-center text-[#5cf68b] text-md md:text-xl'>
@@ -26,7 +26,7 @@ function Experience() {
                         </button>
                     </Link>
                 </div>
-                <div className='w-[50vw] h-[50vh] relative mt-5 md:mt-0'>
+                <div className='h-[100%] w-[100%]  md:h-[95%] md:w-[95%] relative mt-5 md:mt-0'>
                     <Image src={'/experience.svg'}
                         loading="lazy"
                         alt='Experience'

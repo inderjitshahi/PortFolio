@@ -9,15 +9,15 @@ function Experience() {
                 subHeading={"Unleashing Expertise"}
                 title={"Projects"}
             />
-            <div className='border-0 flex flex-col-reverse md:flex-row p-2 md:p-5 text-white] items-center md:justify-between md:pl-48 max-h-[90vh] bg-gradient-to-r to-[#B30AF5] from-[#F50AC2]'>
-                <div className='w-[50vw] h-[50vh] relative mt-5 md:mt-0'>
+            <div className='grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-3  py-5 md:py-16 overflow-hidden place-items-center  bg-gradient-to-r to-[#B30AF5] from-[#F50AC2]'>
+                <div className='h-[100%] w-[100%]  md:h-[95%] md:w-[95%] relative mt-5 md:mt-0'>
                     <Image src={'/projects.svg'}
                         loading="lazy"
                         alt='Experience'
                         fill
                     ></Image>
                 </div>
-                <div className='flex flex-col items-center justify-center md:h-full md:w-full'>
+                <div className='flex flex-col items-center justify-center p-5 md:p-10'>
                     <div >
                         <h3 className='text-2xl md:text-6xl text-[#0AF5B3] text-center'>Projects</h3>
                         <p className='text-center text-[#0AF5B3] text-md md:text-xl'>

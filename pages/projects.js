@@ -27,9 +27,9 @@ function experience({ projects }) {
                                 subHeading={project.subheading}
                                 title={project.title}
                             />
-                            <div className='border-0 flex flex-col md:space-x-5 md:flex-row px-3 pt-3 md:py-5  md:px-12 text-white] items-center md:justify-between min-h-[90vh] bg-gradient-to-r to-[#B30AF5] from-[#F50AC2]'>
-                                <div className='flex flex-col items-center justify-center h-full px-3'>
-                                    <div >
+                            <div className='grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-3  overflow-hidden place-items-center bg-gradient-to-r to-[#B30AF5] from-[#F50AC2]'>
+                                <div className='flex flex-col  items-center justify-center p-3  md:p-8'>
+                                    <div className='px-5' >
                                         <p className='text-white text-center text-[#0AF5B3] text-md md:text-xl'>
                                             {project.begin} - {project.end}
                                         </p>
@@ -50,7 +50,7 @@ function experience({ projects }) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='w-screen h-[60vh] p-0 m-0 md:w-[75vw] md:h-[60vh] relative mt-5 md:mt-0 shadow-2xl rounded-t-lg md:rounded-lg  overflow-hidden'>
+                                <div className='h-[100%] w-[100%]  md:h-[95%] md:w-[95%] relative rounded mt-5 md:mt-0 shadow-2xl overflow-hidden'>
                                     <Image src={project?.image ? project?.image : '/not_found.svg'}
                                         loading="lazy"
                                         alt='Experience'
