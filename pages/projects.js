@@ -171,7 +171,7 @@ export async function getStaticProps(context) {
             end: "May, 2023",
             image: '',
             github: "https://github.com/inderjitshahi/Dihadi",
-            website: "",
+            website: "https://dihadi.vercel.app/",
             points: [
                 'Revolutionize the job market for local and less-educated laborers with our Next.js-powered employment app. Built on a foundation of Firebase and NextAuth, it provides a user-friendly platform for job seekers and employers to connect and thrive.',
                 'With a visually appealing and intuitive interface crafted using Tailwind CSS, our employment app enables laborers to browse and apply for suitable jobs effortlessly. NextAuth ensures secure and seamless authentication, while Firebase facilitates real-time communication between job seekers and employers, fostering meaningful employment opportunities for the less-educated workforce.'
