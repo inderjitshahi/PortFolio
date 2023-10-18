@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0rem 0 0 0; /*earlier 5rem*/
+    margin: 0; /*earlier 5rem*/
+    /* border: 2px solid red; */
 }
 
 .about-me-parent {
@@ -14,6 +15,7 @@
 .about-me-card {
     display: flex;
     width: 100%;
+    padding: 0 2rem;
     /* box-shadow: 0 0 1rem -.1rem rgb(83, 78, 78); */
 }
 
@@ -22,7 +24,8 @@
 .about-me-details {
     width: 48%;
     text-align: justify;
-    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 0;
 }
 
 .about-me-description {
@@ -79,15 +82,15 @@
 }
 
 @media only screen and (max-width:898px) {
-    /* .about-me-profile {
-        display: none;
-    } */
     .about-me-card{
         flex-direction: column;
+        padding: 0 0;
     }
 
     .about-me-details {
         width: 100%;
+        padding-left: 0;
+        padding-top:2rem;
     }
 }
 

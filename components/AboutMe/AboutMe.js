@@ -33,7 +33,7 @@ function AboutMe(props) {
                 <div className={Classes['about-me-card']} >
                     <div className="relative w-[100%] h-[20rem] md:h-auto md:w-[50%]">
                         <Image
-                            src="/me.jpg"
+                            src="/me.jpg"   
                             objectFit='cover'
                             fill
                             alt="profile image"

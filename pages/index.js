@@ -20,7 +20,8 @@ function Home({ projectDetails, skills }) {
                 <meta name="author" content="Inderjit Shahi"></meta>
                 <link rel="shortcut icon" href="/Logo_Circular.png" type="image/x-icon"></link>
             </Head>
-            <ToastContainer />
+            
+            <ToastContainer />  
             <Zoom>
                 <Profile />
             </Zoom>
