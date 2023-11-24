@@ -14,12 +14,6 @@ import Experience from '../components/Experience';
 function Home({ projectDetails, skills }) {
     return (
         <main className='dark:bg-black'>
-            <Head>
-                <title>Inderjit Shahi</title>
-                <meta name="description" content="Personal Portfolio WebSite For Inderjit Shahi"></meta>
-                <meta name="author" content="Inderjit Shahi"></meta>
-                <link rel="shortcut icon" href="/Logo_Circular.png" type="image/x-icon"></link>
-            </Head>
             
             <ToastContainer />  
             <Zoom>
