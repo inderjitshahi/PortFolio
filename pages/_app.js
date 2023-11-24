@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
 import { Rubik } from 'next/font/google';
-import 'tw-elements';  // Assuming this is a valid import for your project
 import '../styles/globals.css';
 
 const rubik = Rubik({
@@ -10,12 +9,6 @@ const rubik = Rubik({
 });
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    const use = async () => {
-      (await import('tw-elements')).default;
-    };
-    use();
-  }, []);
 
   return (
     <>
