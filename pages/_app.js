@@ -1,5 +1,10 @@
 import { useEffect } from 'react';
 import '../styles/globals.css'
+import { Rubik } from 'next/font/google'
+const rubik = Rubik({
+  subsets: ['latin'],
+  weight: ['400']
+});
 
 function MyApp({ Component, pageProps }) {
 
@@ -10,7 +15,9 @@ function MyApp({ Component, pageProps }) {
     use();
   }, []);
 
-  return <Component {...pageProps} />;
+  return <main className={rubik.className} >
+    <Component {...pageProps} />;
+  </main>
 }
 
 export default MyApp;

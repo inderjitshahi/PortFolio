@@ -2,9 +2,10 @@ import React from 'react';
 import ScreenHeading from '../ScreenHeading';
 import Classes from './AboutMe.module.css';
 import Image from 'next/image';
+import { AboutMeDescription } from '../../data';
 function AboutMe(props) {
     const SCREEN_CONSTANT = {
-        description: "Welcome to the portfolio of Inderjit Shahi, a talented MERN developer with a proven track record of crafting exceptional digital experiences. With a Bachelor's degree in Mathematics and Computing from Delhi Technological University and a passion for innovative web development, I possess the skills and expertise to bring your projects to life. From implementing secure user authentication and optimizing web performance to leveraging machine learning algorithms, I have a diverse range of experience that enables me to deliver customized solutions tailored to your specific needs. Explore my projects and technical skills to discover how I can elevate your online presence and drive meaningful results. Let's collaborate and transform your ideas into extraordinary digital realities. ",
+        description: AboutMeDescription,
         highlights: {
             bullets: [
                 "MERN Stack Development",
@@ -33,15 +34,16 @@ function AboutMe(props) {
                 <div className={Classes['about-me-card']} >
                     <div className="relative w-[100%] h-[20rem] md:h-auto md:w-[50%]">
                         <Image
-                            src="/me.jpg"   
+                            src="/me.jpg"
                             objectFit='cover'
                             fill
                             alt="profile image"
                         />
                     </div>
                     <div className={Classes['about-me-details']}>
-                        <span className={Classes['about-me-description']}>{SCREEN_CONSTANT.description}
-                        </span>
+                    <p className={`${Classes['about-me-description']} leading-loose whitespace-pre-line font-rubik`}>
+                            {SCREEN_CONSTANT.description}
+                        </p>
                         <div className={Classes['about-me-highlights']} >
                             <div className={Classes['highlights-heading']}>
                                 <span>{SCREEN_CONSTANT.highlights.heading}</span>
