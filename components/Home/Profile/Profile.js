@@ -3,6 +3,7 @@ import Classes from './Profile.module.css'
 import { TypeAnimation } from 'react-type-animation'
 import { BsFacebook, BsLinkedin} from 'react-icons/bs'
 import { AiFillInstagram, AiFillGithub, AiFillMail  } from 'react-icons/ai'
+import { SiLeetcode } from "react-icons/si";
 import Link from 'next/link';
 
 function Profile(props) {
@@ -15,11 +16,14 @@ function Profile(props) {
                             <a href='https://www.linkedin.com/in/inderjit-shahi-b9880a201/' target='blank' className='hover:scale-125'>
                                 <BsLinkedin  className='hover:text-white hover:scale-125'/>
                             </a>
-                            <a href='https://www.instagram.com/inderjitshahi/?hl=en' target='blank' className='hover:scale-125'>
-                                <AiFillInstagram className='hover:text-white hover:scale-125' />
-                            </a>
                             <a href='https://github.com/inderjitshahi' target='blank' className='hover:scale-125'>
                                 <AiFillGithub className='hover:text-white hover:scale-125'/>
+                            </a>
+                            <a href='https://leetcode.com/inderjitshahi' target='blank' className='hover:scale-125'>
+                                <SiLeetcode className='hover:text-white hover:scale-125'/>
+                            </a>
+                            <a href='https://www.instagram.com/inderjitshahi/?hl=en' target='blank' className='hover:scale-125'>
+                                <AiFillInstagram className='hover:text-white hover:scale-125' />
                             </a>
                             <a href='https://www.facebook.com/profile.php?id=100011757080675' target='blank' className='hover:scale-125'>
                                 <BsFacebook className='hover:text-white hover:scale-125'/>
