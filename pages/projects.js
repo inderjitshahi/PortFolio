@@ -78,7 +78,7 @@ export async function getStaticProps(context) {
             end: "May, 2023",
             image: '/project_images/coursecove.png',
             github: "https://github.com/inderjitshahi/coursecove",
-            website: "https://coursecove.onrender.com/",
+            website: "https://coursecove.vercel.app/",
             points: [
                 "Led cross-functional team to develop Jansuvai complaint tracking system, benefiting 2 million citizens.",
                 "Demonstrated leadership and effective communication by coordinating design and client teams, ensuring seamless integration and timely delivery.",
