@@ -21,12 +21,12 @@ function experience({ exps }) {
                 </div>
                 <div>
                     {exps.map((exp, i) => {
-                        return <div key={i} >
+                        return <div key={i} className='' >
                             <ScreenHeading
                                 subHeading={exp.company}
                                 title={exp.title}
                             />
-                            <div className='grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-3  overflow-hidden place-items-center  bg-gradient-to-r from-[#692CF3] to-[#8B5CF6]'>
+                            <div className='md:min-h-[80vh] grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-3  overflow-hidden place-items-center  bg-gradient-to-r from-[#692CF3] to-[#8B5CF6]'>
                                 <div className='flex flex-col items-center justify-center p-5  md:p-10'>
                                     <div >
                                         <p className='text-white text-center text-[#5cf68b] text-md md:text-xl'>
@@ -66,6 +66,18 @@ export default experience;
 export async function getStaticProps(context) {
     const exps = [
         {
+            title: "MERN Stack Intern",
+            company: "Wereon",
+            location: "Remote",
+            begin: 'July, 2023',
+            end: "August, 2023",
+            certificate: '/certificates/wereon.png',
+            points: [
+                "Implemented MERN-based user authentication, reducing login errors by 30% and enhancing user experience",
+                "Boosted web app performance through server-side caching, cutting load time by 40% and enhancing responsiveness",
+            ]
+        },
+        {
             title: "Software Development Engineer Intern",
             company: "Katihar Police",
             location: "Remote",
@@ -84,23 +96,11 @@ export async function getStaticProps(context) {
             location: "Delhi, India",
             begin: 'June, 2023',
             end: "July, 2023",
-            certificate: '',
+            certificate: '/certificates/dtu_intern.png',
             points: [
                 "Implemented Python machine learning with NumPy for K-means clustering, achieving 92% accuracy.",
                 "Enhanced FCM clustering with FCM Special, achieving 15% lower error than traditional FCM on benchmarks.",
                 "Excelled an IoU score of 0.85 using the enhanced Fuzzy C-Means Special algorithm for image segmentation on 100 images, accurately identifying and segmenting distinct regions."
-            ]
-        },
-        {
-            title: "MERN Stack Intern",
-            company: "Wereon",
-            location: "Remote",
-            begin: 'July, 2023',
-            end: "August, 2023",
-            certificate: '',
-            points: [
-                "Implemented MERN-based user authentication, reducing login errors by 30% and enhancing user experience",
-                "Boosted web app performance through server-side caching, cutting load time by 40% and enhancing responsiveness",
             ]
         },
     ];
