@@ -69,7 +69,7 @@ export async function getStaticProps(context) {
             title: "MERN Stack Intern",
             company: "Wereon",
             location: "Remote",
-            begin: 'July, 2023',
+            begin: 'June, 2023',
             end: "August, 2023",
             certificate: '/certificates/wereon.png',
             points: [
@@ -95,7 +95,7 @@ export async function getStaticProps(context) {
             company: "Delhi Technological University",
             location: "Delhi, India",
             begin: 'June, 2023',
-            end: "July, 2023",
+            end: "August, 2023",
             certificate: '/certificates/dtu_intern.png',
             points: [
                 "Implemented Python machine learning with NumPy for K-means clustering, achieving 92% accuracy.",
