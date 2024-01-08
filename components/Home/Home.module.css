@@ -6,4 +6,5 @@
     /* height: 50vh !important; */
     min-height: 40rem;
     background-image: url('../assets/Home/bg2.png');
+    min-height: 100vh;
 }
